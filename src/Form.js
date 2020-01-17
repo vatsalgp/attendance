@@ -29,7 +29,7 @@ class Form extends React.Component {
                     type="date"
                     onSubmit={e => this.setState({ date: e })}
                 />
-                <button className="ui segment" onClick={() => console.log(this.state)}>Submit</button>
+                <button className="ui segment" onClick={() => this.props.onSubmit(this.state)}>Submit</button>
             </div >
         );
     }
